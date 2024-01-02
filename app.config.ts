@@ -1,16 +1,10 @@
 export default defineAppConfig({
   docus: {
-    title: 'Docus',
+    title: 'Spyua Blog',
     description: 'The best place to start your documentation.',
     image: 'https://user-images.githubusercontent.com/904724/185365452-87b7ca7b-6030-4813-a2db-5e65c785bf88.png',
     socials: {
-      twitter: 'nuxt_js',
-      github: 'nuxt-themes/docus',
-      nuxt: {
-        label: 'Nuxt',
-        icon: 'simple-icons:nuxtdotjs',
-        href: 'https://nuxt.com'
-      }
+      github: 'https://github.com/spyua',
     },
     github: {
       dir: '.starters/default/content',
@@ -29,8 +23,9 @@ export default defineAppConfig({
       fluid: true
     },
     header: {
-      logo: true,
+      logo: false,
       showLinkIcon: true,
+      title:'Spyua Blog',
       exclude: [],
       fluid: true
     }
