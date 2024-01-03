@@ -9,5 +9,10 @@ export default defineNuxtConfig({
   ],
   experimental: {
     payloadExtraction: false
+  },
+  content: {
+    api: {
+      baseURL: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/blog/' : '/'
+    }
   }
 })
