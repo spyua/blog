@@ -5,14 +5,11 @@ export default defineNuxtConfig({
   modules: [
     // Remove it if you don't use Plausible analytics
     // https://github.com/nuxt-modules/plausible
+    // 
     '@nuxtjs/plausible'
   ],
   experimental: {
     payloadExtraction: false
   },
-  content: {
-    api: {
-      baseURL: process.env.DEPLOY_ENV === 'GH_PAGES' ? '/blog/' : '/'
-    }
-  }
+  
 })
